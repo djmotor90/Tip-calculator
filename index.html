@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Tip Calculator</h1>
+        <div class="input-box">
+            <label for="bill">Bill Amount:</label>
+            <input type="number" id="bill" placeholder="Enter bill amount">
+        </div>
+
+        <div class="input-box">
+            <label for="tipPercentage">Tip Percentage:</label>
+            <select id="tipPercentage">
+                <option value="0.1">10%</option>
+                <option value="0.15">15%</option>
+                <option value="0.2">20%</option>
+                <option value="0.25">25%</option>
+            </select>
+        </div>
+
+        <div class="results">
+            <!-- Initially hidden, will display when a bill amount is provided -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
